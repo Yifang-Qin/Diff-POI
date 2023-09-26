@@ -1,7 +1,7 @@
 ## Diff-POI
 
 This is the pytorch implementation for our TOIS 2023 [paper](https://dl.acm.org/doi/10.1145/3624475):
-> Yifang Qin, Hongjun Wu, Wei Ju, Xiao Luo, Ming Zhang(2022). 
+> Yifang Qin, Hongjun Wu, Wei Ju, Xiao Luo, Ming Zhang (2023). 
 > A Diffusion model for POI recommendation
 
 ```
