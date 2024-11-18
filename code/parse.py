@@ -40,6 +40,7 @@ def parse_args():
                         help="log file path")
     parser.add_argument('--save', action='store_true', default=False)
     parser.add_argument('--load', action='store_true', default=False)
+    parser.add_argument('--eval_all', action='store_true', default=False)
     parser.add_argument('--seed', type=int, default=9876,
                         help='random seed')
     parser.add_argument('--gpu', type=str, default=None,

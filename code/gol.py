@@ -42,5 +42,5 @@ os.makedirs(FILE_PATH, exist_ok=True)
 dist_mat = torch.from_numpy(np.load(os.path.join(DATA_PATH, dataset.lower(), 'dist_mat.npy')))
 device = torch.device('cpu' if ARG.gpu is None else f'cuda:{ARG.gpu}')
 conf = {'lr': ARG.lr, 'decay': ARG.decay, 'num_layer': ARG.layer, 'hidden': ARG.hidden,
-        'dropout': ARG.dropout, 'keepprob': ARG.keepprob, 'max_len': ARG.length,
+        'dropout': ARG.dropout, 'eval_all': ARG.eval_all, 'keepprob': ARG.keepprob, 'max_len': ARG.length,
         'interval': ARG.interval, 'T': ARG.diffsize, 'beta': ARG.beta, 'dt': ARG.stepsize}
