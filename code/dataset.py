@@ -70,9 +70,9 @@ class GraphData(Dataset):
             labels = torch.zeros((self.n_poi, )).long()
             labels[poi] = 1
 
+            exclude_set = torch.LongTensor(list(set(self.tr_dict[uid])))
+            exclude_mask = torch.zeros((self.n_poi, )).bool()
             if not gol.conf['eval_all']:
-                exclude_set = torch.LongTensor(list(set(self.tr_dict[uid])))
-                exclude_mask = torch.zeros((self.n_poi, )).bool()
                 exclude_mask[exclude_set] = 1
                 exclude_mask[poi] = 0
 
